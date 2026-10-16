@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Proposal</title>
+    <meta
+      name="description"
+      content="A romantic love proposal app with a playful yes/no experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="couple-bg" aria-hidden="true"></div>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <main class="app-shell">
+      <section class="card" id="questionCard">
+        <div class="badge">For My Love</div>
+        <h1>Did you love me?</h1>
+        <p class="subtitle">
+          Every heartbeat has been waiting for this moment. Will you be my forever and my favorite person?
+        </p>
+
+        <div class="heart-row" aria-hidden="true">
+          <span>❤</span>
+          <span>❤</span>
+          <span>❤</span>
+          <span>❤</span>
+          <span>❤</span>
+        </div>
+
+        <div class="choices">
+          <button class="option love" id="yesBtn">Yes ❤️</button>
+          <button class="option no" id="noBtn">No 😢</button>
+        </div>
+      </section>
+
+      <section class="response hidden" id="loveResponse">
+        <div class="response-header">
+          <span class="emoji">💖</span>
+          <h2>You made my world brighter</h2>
+        </div>
+        <p>
+          My love, your answer means everything to me. You are the reason my heart feels safe, warm,
+          and full of joy every single day.
+        </p>
+
+        <div class="story-strip">
+          <span>Our first smile</span>
+          <span>Our memories</span>
+          <span>Our forever</span>
+        </div>
+
+        <div class="gallery" id="loveGallery" aria-label="Our memories"></div>
+
+        <div class="message-box">
+          <p>
+            I will always choose you, in every season, every smile, and every dream. You are my forever,
+            my peace, and my favorite story.
+          </p>
+        </div>
+
+        <div class="download-row">
+          <a
+            class="option download-btn"
+            href="oct%2010%20birthday-20261016T125639Z-1-001/oct%2010%20birthday/IMG_8531.JPG"
+            download="our-love-photo.jpg"
+          >
+            Download Photo 📥
+          </a>
+        </div>
+
+        <div class="video-card">
+          <video controls playsinline preload="metadata">
+            <source src="WhatsApp Video 2026-10-16 at 6.44.38 PM.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="back-row">
+          <button class="option back-btn" id="backFromLove">Back 💌</button>
+        </div>
+      </section>
+
+      <section class="response hidden" id="sadResponse">
+        <div class="response-header sad-header">
+          <span class="emoji">😭</span>
+          <h2>My heart feels a little heavy</h2>
+        </div>
+        <p>
+          I know love can be complicated, but I will still keep loving you with all my heart.
+        </p>
+
+        <div class="sad-emoji-row" aria-label="sad emojis">
+          <span>😢</span>
+          <span>💔</span>
+          <span>🌧️</span>
+          <span>😔</span>
+          <span>🫧</span>
+        </div>
+
+        <div class="message-box sad-box">
+          <p>
+            Even if the answer is no today, I will still treasure every beautiful moment we shared.
+          </p>
+        </div>
+
+        <div class="back-row">
+          <button class="option back-btn" id="backFromSad">Back 😞</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
